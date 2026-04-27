@@ -1,0 +1,8 @@
+User-agent: *
+Disallow:
+
+# Allow all crawlers full access
+Allow: /
+
+# Sitemap (Hugo will substitute .Site.BaseURL)
+Sitemap: https://eg-gch2026.github.io/sitemap-gch2026.xml

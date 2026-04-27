@@ -1,0 +1,424 @@
+/* === Inter font family === */
+
+/* Thin */
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/inter/Inter-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Light */
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/inter/Inter-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Regular */
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/inter/Inter-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/inter/Inter-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Semi-Bold */
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/inter/Inter-SemiBold.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* === Your style rules === */
+body {
+  font-family: 'Inter', sans-serif;
+  margin:0;
+  background:#fff;
+  color:#222; 
+  font-weight: 300;/* Light base weight */
+  line-height: 1.45;
+}
+h1, h2, h3 {font-weight: 300; /* Thin headings & menu */}
+nav {font-weight: 300;}
+header {position:fixed; top:0; width:100%; background:white; border-bottom:1px solid #eee; padding:10px 0; z-index:1000;}
+
+nav {
+  display:flex; 
+  align-items:center; 
+  justify-content: flex-start; /* no big gaps */
+  gap: 5px;                   /* space between items */
+  width:90%; 
+  margin:auto;
+}
+
+nav .nav-brand {
+  display: flex;
+  align-items: center; /* vertically center logo + title */
+  gap: 10px;
+}
+
+nav .nav-brand img {
+  display: block; /* avoid baseline alignment issues */
+  height: 40px;
+  margin: 0;
+}
+
+nav .nav-menu {
+  margin-left: auto;       /* push menu to the right */
+  display: flex;
+  gap: 6px;               /* spacing between menu items */
+  align-items: center;
+}
+
+/* remove any leftover inline spacing on links */
+nav .nav-menu a { 
+  margin-left: 0; 
+}
+
+/* underline for the active/current page */
+nav .nav-menu a.is-current::after {
+  content: "";
+  position: absolute;
+  left: 6px;                /* align with link text padding */
+  right: 6px;
+  bottom: -2px;             /* distance under the text */
+  height: 1px;              /* underline thickness */
+  background: #000;         /* underline color (change if needed) */
+  border-radius: 1px;
+  transition: transform 180ms ease, opacity 180ms ease;
+  transform-origin: left center;
+}
+
+nav img {height:40px; margin-right:10px;}
+/*nav .title {font-weight:600;}*/
+nav .title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; /* regular for better visibility */
+  letter-spacing: 0.5px;
+}
+nav a {
+  display: inline-block;                /* enables transform without layout reflow */
+  text-decoration: none;
+  color: #333;
+  font-weight: 300;                     /* keep weight constant to avoid width shifts */
+  padding: 1px 8px;
+  transform: translateY(0) scale(1);
+  transition: transform 180ms ease, color 180ms ease, text-shadow 180ms ease;
+  will-change: transform, text-shadow;
+  backface-visibility: hidden;
+}
+nav a:hover {
+  color: #000;  
+  transform: translateY(-2px) scale(1.08); /* lift + slight scale — no layout change */
+  text-shadow: 0 3px 8px rgba(0,0,0,0.12); /* stronger emphasis without underline */
+  outline: none;
+}
+main {padding-top:80px; width:90%; margin:auto; max-width:900px;}
+footer {text-align:center; padding:40px 0; border-top:1px solid #eee; margin-top:40px;}
+footer img {height:40px; margin:0 10px; opacity:0.7;}
+strong, b {  font-weight: 500;}
+
+/* === Hero section === */
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 60vh;         /* or your existing hero height */
+  min-height: 320px;
+}
+
+.hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;           /* this makes it crop instead of stretch */
+  object-position: center;     /* center crop (you can change to "top" or "bottom") */
+}
+
+/* optional dark overlay for contrast */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* linear gradient that is transparent at top, darker toward bottom */
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.15) 25%,
+    rgba(0,0,0,0.35) 50%,
+    rgba(0,0,0,0.45) 75%,
+    rgba(0,0,0,0.56) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+/* title positioned on top of the image */
+.hero .hero-title {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  margin: 0;
+  color: white;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 700;
+  width: calc(100% - 32px);
+  max-width: 900px;
+  line-height: 1.15;
+  white-space: normal;
+  overflow: hidden;
+  /* Limit number of lines to 2 using modern CSS */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+}
+
+.hero .hero-image-credit {
+  position: absolute;
+  bottom: 10px;    /* Distància des del marge inferior */
+  right: 15px;     /* Distància des del marge dret */
+  z-index: 2;      /* Per sobre de la imatge i l'overlay */
+  
+  color: rgba(255, 255, 255, 0.8); /* Blanc amb una mica de transparència */
+  font-size: 0.65rem;             /* Mida molt petita i discreta */
+  font-style: italic;
+  letter-spacing: 0.01em;
+  pointer-events: none;           /* Perquè no interfereixi si algú intenta clicar prop */
+}
+
+@media (max-width: 600px) {
+  .hero .hero-image-credit {
+    font-size: 0.55rem;
+    bottom: 5px;
+    right: 10px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .hero .hero-title {
+    font-size: clamp(1.8rem, 1rem + 3.2vw, 4.2rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .hero .hero-title {
+    font-size: clamp(2.1rem, 6vw, 3.5rem);
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;  
+  }
+}
+
+/* reserve space for the scrollbar so content/header don't shift when it appears */
+html {
+  scrollbar-gutter: stable; /* modern browsers (Chromium, Firefox) */
+}
+
+.committee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+  margin: 2rem auto;
+  justify-items: center;
+  max-width: 600px;
+}
+
+.committee-member img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 0.5rem auto;
+  border-radius: 50%;
+}
+
+.committee-member .member-name {
+  margin-top: 8px;
+  text-align: center;
+  font-weight: 300;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+}
+
+/* ==== RESPONSIVE SWITCH: TABLE ↔ CARDS ==== */
+
+/* Default: show desktop table, hide cards */
+.dates-table-desktop {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+   margin-bottom: 40px;     /* adjust this value for more space */
+}
+.dates-table-cards {
+  display: none;
+}
+
+/* Table style */
+.dates-table-desktop th,
+.dates-table-desktop td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.dates-table-desktop th {
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+}
+
+.dates-table-desktop td {
+  color: #444;
+}
+
+/* MOBILE */
+.dates-table-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 2rem 0;
+}
+
+.table-card {
+  padding: 16px 20px;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  font-family: 'Inter', sans-serif;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.table-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.table-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.table-card p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.table-card strong {
+  font-weight: 600;
+  color: #222;
+}
+
+/* DESKTOP <-> MOBILE — switch from table to cards and viceversa*/
+@media (max-width: 650px) {
+  .dates-table-desktop {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  .dates-table-cards {
+    display: none;
+  }
+}
+/*@media (max-width: 650px) {
+  .table-desktop {
+    display: none;
+  }
+  .dates-table-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}*/
+
+
+/* === MAP === */
+.map-wrapper {
+  text-align: center;
+}
+
+.map-wrapper iframe {
+  max-width: 100%;
+}
+
+/* === IMAGE ROW === */
+.image-row {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.image-row img {
+  width: 48%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* === COMMITTEE EMAIL === */
+
+.committee-email {
+  text-align: left;
+  margin-top: -0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.email-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 0.9rem;
+  color: #5a5a5a;
+  text-decoration: none;
+
+  padding: 8px 14px;
+  border-radius: 999px;
+
+  background: #f4f1ec;              /* warm neutral (matches your beige tone) */
+  border: 1px solid #ebe7e2;
+
+  transition: all 0.15s ease;
+}
+
+/* icon */
+.email-link::before {
+  content: "✉";
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+/* hover (very subtle, not "buttony") */
+.email-link:hover {
+  background: #ebe7e2;
+  color: #222;
+  border-color: #e0dbd5;
+}
+
+.email-link:visited,
+.email-link:active {
+  color: #5a5a5a;
+}
