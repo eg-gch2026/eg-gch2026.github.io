@@ -422,3 +422,28 @@ html {
 .email-link:active {
   color: #5a5a5a;
 }
+
+/* === Millores per a les llistes de contingut (Guidelines, etc.) === */
+main ul {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+main li {
+  margin-bottom: 5px;  /* Separa els bullet points perquè respirin */
+  line-height: 1.55;    /* Millora la lectura quan hi ha diverses línies */
+}
+
+/* === Estètica unificada per als enllaços del contingut === */
+main a {
+  color: #222 !important;          /* Mateix color negre/fosc que el text del body */
+  text-decoration: underline !important; /* Subratllat clàssic per accessibilitat */
+  font-weight: 400;                /* Una mica més marcat que el text base (300) */
+  transition: opacity 0.15s ease;
+}
+
+main a:hover {
+  opacity: 0.6;                    /* Es torna gris translúcid, igual que els jump-links */
+  outline: none;
+}
