@@ -1,53 +1,57 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>GCH 2026 - Graphics and Cultural Heritage. Barcelona, November 2-5 on GCH 2026 – Eurographics Workshop on Graphics and Cultural Heritage</title>
-    <link>https://eg-gch2026.github.io/</link>
-    <description>Recent content in GCH 2026 - Graphics and Cultural Heritage. Barcelona, November 2-5 on GCH 2026 – Eurographics Workshop on Graphics and Cultural Heritage</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="https://eg-gch2026.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Call for Papers</title>
-      <link>https://eg-gch2026.github.io/call-for-papers/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://eg-gch2026.github.io/call-for-papers/</guid>
-      <description>&lt;style&gt;&#xD;&#xA;  /* Fix per al scroll quan hi ha barra fixa */&#xD;&#xA;  h2 {&#xD;&#xA;    scroll-margin-top: 100px; &#xD;&#xA;  }&#xD;&#xA;&#xD;&#xA;  /* Estil dels enllaços del menú superior */&#xD;&#xA;  .jump-links {&#xD;&#xA;    text-align: center;&#xD;&#xA;    margin: 20px 0;&#xD;&#xA;  }&#xD;&#xA;&#xD;&#xA;  .jump-links a {&#xD;&#xA;    color: inherit !important;&#xD;&#xA;    text-decoration: underline !important;&#xD;&#xA;    font-weight: 300;&#xD;&#xA;    margin: 0 10px;&#xD;&#xA;  }&#xD;&#xA;  &#xD;&#xA;  .jump-links a:hover {&#xD;&#xA;    opacity: 0.6;&#xD;&#xA;  }&#xD;&#xA;&lt;/style&gt;&#xD;&#xA;&lt;p&gt;We are pleased to invite you to contribute to the &lt;strong&gt;23rd EUROGRAPHICS Workshop on Graphics and Cultural Heritage (GCH 2026)&lt;/strong&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Committees</title>
-      <link>https://eg-gch2026.github.io/committees/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://eg-gch2026.github.io/committees/</guid>
-      <description>&lt;h2 id=&#34;general-chairs&#34;&gt;General Chairs&lt;/h2&gt;&#xA;&lt;div class=&#34;committee-section&#34;&gt;&#xD;&#xA;&#xD;&#xA;  &#xD;&#xA;    &lt;div class=&#34;committee-email&#34;&gt;&#xD;&#xA;      &lt;a href=&#34;mailto:general-gch2026@eg.org&#34; class=&#34;email-link&#34;&gt;&#xD;&#xA;        general-gch2026@eg.org&#xD;&#xA;      &lt;/a&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;  &#xD;&#xA;&#xD;&#xA;  &lt;div class=&#34;committee-grid&#34;&gt;&#xD;&#xA;    &#xD;&#xA;  &lt;div class=&#34;committee-member&#34;&gt;&#xD;&#xA;    &lt;img src=&#34;https://eg-gch2026.github.io/images/committees/imanol-rd.jpg&#34; alt=&#34;Imanol Munoz-Pandiella - UPC&#34;&gt;&#xD;&#xA;    &lt;p class=&#34;member-name&#34;&gt;Imanol Munoz-Pandiella - UPC&lt;/p&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;  &lt;div class=&#34;committee-member&#34;&gt;&#xD;&#xA;    &lt;img src=&#34;https://eg-gch2026.github.io/images/committees/xavier-rd.png&#34; alt=&#34;Xavier Pueyo - UdG&#34;&gt;&#xD;&#xA;    &lt;p class=&#34;member-name&#34;&gt;Xavier Pueyo - UdG&lt;/p&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&lt;/div&gt;&#xA;&lt;h2 id=&#34;program-chairs&#34;&gt;Program Chairs&lt;/h2&gt;&#xA;&lt;h3 id=&#34;full-papers-track-pcs&#34;&gt;Full Papers Track PCs&lt;/h3&gt;&#xA;&lt;div class=&#34;committee-section&#34;&gt;&#xD;&#xA;&#xD;&#xA;  &#xD;&#xA;    &lt;div class=&#34;committee-email&#34;&gt;&#xD;&#xA;      &lt;a href=&#34;mailto:chairs-gch2026@eg.org&#34; class=&#34;email-link&#34;&gt;&#xD;&#xA;        chairs-gch2026@eg.org&#xD;&#xA;      &lt;/a&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;  &#xD;&#xA;&#xD;&#xA;  &lt;div class=&#34;committee-grid&#34;&gt;&#xD;&#xA;    &#xD;&#xA;  &lt;div class=&#34;committee-member&#34;&gt;&#xD;&#xA;    &lt;img src=&#34;https://eg-gch2026.github.io/images/committees/ruggero-rd.png&#34; alt=&#34;Ruggero Pintus - CRS4&#34;&gt;&#xD;&#xA;    &lt;p class=&#34;member-name&#34;&gt;Ruggero Pintus - CRS4&lt;/p&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;  &lt;div class=&#34;committee-member&#34;&gt;&#xD;&#xA;    &lt;img src=&#34;https://eg-gch2026.github.io/images/committees/carles-rd.png&#34; alt=&#34;Carles Bosch - UVic-UCC&#34;&gt;&#xD;&#xA;    &lt;p class=&#34;member-name&#34;&gt;Carles Bosch - UVic-UCC&lt;/p&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;  &lt;div class=&#34;committee-member&#34;&gt;&#xD;&#xA;    &lt;img src=&#34;https://eg-gch2026.github.io/images/committees/carla-rd.png&#34; alt=&#34;Carla Schroer - CHI &amp;lt;br&amp;gt; ACM JOCCH Inv. Editor&#34;&gt;&#xD;&#xA;    &lt;p class=&#34;member-name&#34;&gt;Carla Schroer - CHI &lt;br&gt; ACM JOCCH Inv. Editor&lt;/p&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&lt;/div&gt;&#xA;&lt;h3 id=&#34;short-papers-and-posters-track-pcs&#34;&gt;Short Papers and Posters Track PCs&lt;/h3&gt;&#xA;&lt;div class=&#34;committee-section&#34;&gt;&#xD;&#xA;&#xD;&#xA;  &#xD;&#xA;    &lt;div class=&#34;committee-email&#34;&gt;&#xD;&#xA;      &lt;a href=&#34;mailto:chairs-SP-gch2026@eg.org&#34; class=&#34;email-link&#34;&gt;&#xD;&#xA;        chairs-SP-gch2026@eg.org&#xD;&#xA;      &lt;/a&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;  &#xD;&#xA;&#xD;&#xA;  &lt;div class=&#34;committee-grid&#34;&gt;&#xD;&#xA;    &#xD;&#xA;  &lt;div class=&#34;committee-member&#34;&gt;&#xD;&#xA;    &lt;img src=&#34;https://eg-gch2026.github.io/images/committees/panagiottis-rd.png&#34; alt=&#34;Panagiotis Charalambous - CYENS&#34;&gt;&#xD;&#xA;    &lt;p class=&#34;member-name&#34;&gt;Panagiotis Charalambous - CYENS&lt;/p&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;  &lt;div class=&#34;committee-member&#34;&gt;&#xD;&#xA;    &lt;img src=&#34;https://eg-gch2026.github.io/images/committees/irina-rd.png&#34; alt=&#34;Irina Ciortan - NTNU&#34;&gt;&#xD;&#xA;    &lt;p class=&#34;member-name&#34;&gt;Irina Ciortan - NTNU&lt;/p&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&lt;/div&gt;&#xA;&lt;h3 id=&#34;eccch-track-pcs&#34;&gt;ECCCH Track PCs&lt;/h3&gt;&#xA;&lt;div class=&#34;committee-section&#34;&gt;&#xD;&#xA;&#xD;&#xA;  &#xD;&#xA;    &lt;div class=&#34;committee-email&#34;&gt;&#xD;&#xA;      &lt;a href=&#34;mailto:chairs-ECCCH-gch2026@eg.org&#34; class=&#34;email-link&#34;&gt;&#xD;&#xA;        chairs-ECCCH-gch2026@eg.org&#xD;&#xA;      &lt;/a&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;  &#xD;&#xA;&#xD;&#xA;  &lt;div class=&#34;committee-grid&#34;&gt;&#xD;&#xA;    &#xD;&#xA;  &lt;div class=&#34;committee-member&#34;&gt;&#xD;&#xA;    &lt;img src=&#34;https://eg-gch2026.github.io/images/committees/dimitris-rd.png&#34; alt=&#34;Dimitris Kotzinos - CYU&#34;&gt;&#xD;&#xA;    &lt;p class=&#34;member-name&#34;&gt;Dimitris Kotzinos - CYU&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Keynotes</title>
-      <link>https://eg-gch2026.github.io/keynotes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://eg-gch2026.github.io/keynotes/</guid>
-      <description>&lt;p&gt;GCH 2026 will feature inspiring keynote speakers from leading institutions in computer graphics, cultural heritage, and digital humanities.&#xA;The full list of speakers will be announced later.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Program</title>
-      <link>https://eg-gch2026.github.io/program/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://eg-gch2026.github.io/program/</guid>
-      <description>&lt;p&gt;The detailed conference program will be announced after paper acceptance.&#xA;It will include keynote talks, paper sessions, poster presentations, and social events.&#xA;Stay tuned for the schedule and session details.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Registration</title>
-      <link>https://eg-gch2026.github.io/registration/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://eg-gch2026.github.io/registration/</guid>
-      <description>&lt;p&gt;Registration will open in mid-2026.&#xA;Fees, deadlines, and instructions for participants will be published here.&#xA;For questions, please contact the organizing committee.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Venue &amp; Travel</title>
-      <link>https://eg-gch2026.github.io/venue/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://eg-gch2026.github.io/venue/</guid>
-      <description>&lt;h2 id=&#34;host-city-barcelona&#34;&gt;Host City: Barcelona&lt;/h2&gt;&#xA;&lt;p&gt;Barcelona, the capital of Catalonia, is one of Europe’s most vibrant cultural and scientific hubs. With a rich history spanning over two millennia, the city offers an exceptional concentration of cultural heritage sites, museums, archives, and architectural landmarks.&lt;/p&gt;&#xA;&lt;div class=&#34;image-row&#34;&gt;&#xD;&#xA;  &lt;img src=&#34;https://eg-gch2026.github.io/images/venue/sagrada-familia.jpg&#34; alt=&#34;Sagrada Familia, Barcelona.&#34;&gt;&#xD;&#xA;  &lt;img src=&#34;https://eg-gch2026.github.io/images/venue/park-guell.jpg&#34; alt=&#34;Park Güell, Barcelona.&#34;&gt;&#xD;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;In 2026, Barcelona will commemorate the centenary of the death of Antoni Gaudí, one of the most influential architects of modernism, whose works (such as the Sagrada Família, Park Güell, and Casa Batlló) are recognized as UNESCO World Heritage Sites.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>GCH 2026 - Graphics and Cultural Heritage. Barcelona, November 2-5 on GCH 2026 – Eurographics Workshop on Graphics and Cultural Heritage</title>
+		<link>https://eg-gch2026.github.io/</link>
+		<description>Recent content in GCH 2026 - Graphics and Cultural Heritage. Barcelona, November 2-5 on GCH 2026 – Eurographics Workshop on Graphics and Cultural Heritage</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<atom:link href="https://eg-gch2026.github.io/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Call for Papers</title>
+				<link>https://eg-gch2026.github.io/call-for-papers/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://eg-gch2026.github.io/call-for-papers/</guid>
+				<description>&lt;style&gt;&#xD;&#xA;  /* Fix per al scroll quan hi ha barra fixa */&#xD;&#xA;  h2 {&#xD;&#xA;    scroll-margin-top: 100px; &#xD;&#xA;  }&#xD;&#xA;&#xD;&#xA;  /* Estil dels enllaços del menú superior */&#xD;&#xA;  .jump-links {&#xD;&#xA;    text-align: center;&#xD;&#xA;    margin: 20px 0;&#xD;&#xA;  }&#xD;&#xA;&#xD;&#xA;  .jump-links a {&#xD;&#xA;    color: inherit !important;&#xD;&#xA;    text-decoration: underline !important;&#xD;&#xA;    font-weight: 300;&#xD;&#xA;    margin: 0 10px;&#xD;&#xA;  }&#xD;&#xA;  &#xD;&#xA;  .jump-links a:hover {&#xD;&#xA;    opacity: 0.6;&#xD;&#xA;  }&#xD;&#xA;&lt;/style&gt;&#xD;&#xA;&lt;p&gt;We are pleased to invite you to contribute to the &lt;strong&gt;23rd EUROGRAPHICS Workshop on Graphics and Cultural Heritage (GCH 2026)&lt;/strong&gt;.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Committees</title>
+				<link>https://eg-gch2026.github.io/committees/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://eg-gch2026.github.io/committees/</guid>
+				<description>&lt;h2 id=&#34;general-chairs&#34;&gt;General Chairs&lt;/h2&gt;&#xA;&lt;div class=&#34;committee-section&#34;&gt;&#xD;&#xA;&#xD;&#xA;  &#xD;&#xA;    &lt;div class=&#34;committee-email&#34;&gt;&#xD;&#xA;      &lt;a href=&#34;mailto:general-gch2026@eg.org&#34; class=&#34;email-link&#34;&gt;&#xD;&#xA;        general-gch2026@eg.org&#xD;&#xA;      &lt;/a&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;  &#xD;&#xA;&#xD;&#xA;  &lt;div class=&#34;committee-grid&#34;&gt;&#xD;&#xA;    &#xD;&#xA;  &lt;div class=&#34;committee-member&#34;&gt;&#xD;&#xA;    &lt;img src=&#34;https://eg-gch2026.github.io/images/committees/imanol-rd.jpg&#34; alt=&#34;Imanol Munoz-Pandiella - UPC&#34;&gt;&#xD;&#xA;    &lt;p class=&#34;member-name&#34;&gt;Imanol Munoz-Pandiella - UPC&lt;/p&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;  &lt;div class=&#34;committee-member&#34;&gt;&#xD;&#xA;    &lt;img src=&#34;https://eg-gch2026.github.io/images/committees/xavier-rd.png&#34; alt=&#34;Xavier Pueyo - UdG&#34;&gt;&#xD;&#xA;    &lt;p class=&#34;member-name&#34;&gt;Xavier Pueyo - UdG&lt;/p&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&lt;/div&gt;&#xA;&lt;h2 id=&#34;program-chairs&#34;&gt;Program Chairs&lt;/h2&gt;&#xA;&lt;h3 id=&#34;full-papers-track-pcs&#34;&gt;Full Papers Track PCs&lt;/h3&gt;&#xA;&lt;div class=&#34;committee-section&#34;&gt;&#xD;&#xA;&#xD;&#xA;  &#xD;&#xA;    &lt;div class=&#34;committee-email&#34;&gt;&#xD;&#xA;      &lt;a href=&#34;mailto:chairs-gch2026@eg.org&#34; class=&#34;email-link&#34;&gt;&#xD;&#xA;        chairs-gch2026@eg.org&#xD;&#xA;      &lt;/a&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;  &#xD;&#xA;&#xD;&#xA;  &lt;div class=&#34;committee-grid&#34;&gt;&#xD;&#xA;    &#xD;&#xA;  &lt;div class=&#34;committee-member&#34;&gt;&#xD;&#xA;    &lt;img src=&#34;https://eg-gch2026.github.io/images/committees/ruggero-rd.png&#34; alt=&#34;Ruggero Pintus - CRS4&#34;&gt;&#xD;&#xA;    &lt;p class=&#34;member-name&#34;&gt;Ruggero Pintus - CRS4&lt;/p&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;  &lt;div class=&#34;committee-member&#34;&gt;&#xD;&#xA;    &lt;img src=&#34;https://eg-gch2026.github.io/images/committees/carles-rd.png&#34; alt=&#34;Carles Bosch - UVic-UCC&#34;&gt;&#xD;&#xA;    &lt;p class=&#34;member-name&#34;&gt;Carles Bosch - UVic-UCC&lt;/p&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;  &lt;div class=&#34;committee-member&#34;&gt;&#xD;&#xA;    &lt;img src=&#34;https://eg-gch2026.github.io/images/committees/carla-rd.png&#34; alt=&#34;Carla Schroer - CHI &amp;lt;br&amp;gt; ACM JOCCH Inv. Editor&#34;&gt;&#xD;&#xA;    &lt;p class=&#34;member-name&#34;&gt;Carla Schroer - CHI &lt;br&gt; ACM JOCCH Inv. Editor&lt;/p&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&lt;/div&gt;&#xA;&lt;h3 id=&#34;short-papers-and-posters-track-pcs&#34;&gt;Short Papers and Posters Track PCs&lt;/h3&gt;&#xA;&lt;div class=&#34;committee-section&#34;&gt;&#xD;&#xA;&#xD;&#xA;  &#xD;&#xA;    &lt;div class=&#34;committee-email&#34;&gt;&#xD;&#xA;      &lt;a href=&#34;mailto:chairs-SP-gch2026@eg.org&#34; class=&#34;email-link&#34;&gt;&#xD;&#xA;        chairs-SP-gch2026@eg.org&#xD;&#xA;      &lt;/a&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;  &#xD;&#xA;&#xD;&#xA;  &lt;div class=&#34;committee-grid&#34;&gt;&#xD;&#xA;    &#xD;&#xA;  &lt;div class=&#34;committee-member&#34;&gt;&#xD;&#xA;    &lt;img src=&#34;https://eg-gch2026.github.io/images/committees/panagiottis-rd.png&#34; alt=&#34;Panagiotis Charalambous - CYENS&#34;&gt;&#xD;&#xA;    &lt;p class=&#34;member-name&#34;&gt;Panagiotis Charalambous - CYENS&lt;/p&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;  &lt;div class=&#34;committee-member&#34;&gt;&#xD;&#xA;    &lt;img src=&#34;https://eg-gch2026.github.io/images/committees/irina-rd.png&#34; alt=&#34;Irina Ciortan - NTNU&#34;&gt;&#xD;&#xA;    &lt;p class=&#34;member-name&#34;&gt;Irina Ciortan - NTNU&lt;/p&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&lt;/div&gt;&#xA;&lt;h3 id=&#34;eccch-track-pcs&#34;&gt;ECCCH Track PCs&lt;/h3&gt;&#xA;&lt;div class=&#34;committee-section&#34;&gt;&#xD;&#xA;&#xD;&#xA;  &#xD;&#xA;    &lt;div class=&#34;committee-email&#34;&gt;&#xD;&#xA;      &lt;a href=&#34;mailto:chairs-ECCCH-gch2026@eg.org&#34; class=&#34;email-link&#34;&gt;&#xD;&#xA;        chairs-ECCCH-gch2026@eg.org&#xD;&#xA;      &lt;/a&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;  &#xD;&#xA;&#xD;&#xA;  &lt;div class=&#34;committee-grid&#34;&gt;&#xD;&#xA;    &#xD;&#xA;  &lt;div class=&#34;committee-member&#34;&gt;&#xD;&#xA;    &lt;img src=&#34;https://eg-gch2026.github.io/images/committees/dimitris-rd.png&#34; alt=&#34;Dimitris Kotzinos - CYU&#34;&gt;&#xD;&#xA;    &lt;p class=&#34;member-name&#34;&gt;Dimitris Kotzinos - CYU&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Keynotes</title>
+				<link>https://eg-gch2026.github.io/keynotes/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://eg-gch2026.github.io/keynotes/</guid>
+				<description>&lt;p&gt;GCH 2026 will feature inspiring keynote speakers from leading institutions in computer graphics, cultural heritage, and digital humanities.&#xA;The full list of speakers will be announced later.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Program</title>
+				<link>https://eg-gch2026.github.io/program/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://eg-gch2026.github.io/program/</guid>
+				<description>&lt;p&gt;The detailed conference program will be announced after paper acceptance.&#xA;It will include keynote talks, paper sessions, poster presentations, and social events.&#xA;Stay tuned for the schedule and session details.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Registration</title>
+				<link>https://eg-gch2026.github.io/registration/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://eg-gch2026.github.io/registration/</guid>
+				<description>&lt;p&gt;Registration will open in mid-2026.&#xA;Fees, deadlines, and instructions for participants will be published here.&#xA;For questions, please contact the organizing committee.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Venue &amp; Travel</title>
+				<link>https://eg-gch2026.github.io/venue/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://eg-gch2026.github.io/venue/</guid>
+				<description>&lt;h2 id=&#34;host-city-barcelona&#34;&gt;Host City: Barcelona&lt;/h2&gt;&#xA;&lt;p&gt;Barcelona, the capital of Catalonia, is one of Europe’s most vibrant cultural and scientific hubs. With a rich history spanning over two millennia, the city offers an exceptional concentration of cultural heritage sites, museums, archives, and architectural landmarks.&lt;/p&gt;&#xA;&lt;div class=&#34;image-row&#34;&gt;&#xD;&#xA;  &lt;img src=&#34;https://eg-gch2026.github.io/images/venue/sagrada-familia.jpg&#34; alt=&#34;Sagrada Familia, Barcelona.&#34;&gt;&#xD;&#xA;  &lt;img src=&#34;https://eg-gch2026.github.io/images/venue/park-guell.jpg&#34; alt=&#34;Park Güell, Barcelona.&#34;&gt;&#xD;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;In 2026, Barcelona will commemorate the centenary of the death of Antoni Gaudí, one of the most influential architects of modernism, whose works (such as the Sagrada Família, Park Güell, and Casa Batlló) are recognized as UNESCO World Heritage Sites.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>
