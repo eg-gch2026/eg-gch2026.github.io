@@ -46,6 +46,80 @@
 }
 
 /* === Your style rules === */
+
+/* Mobile menu styles */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 24px;
+  }
+
+  /* Active mobile menu styles */
+  .menu-items.active {
+    display: flex;
+  }
+
+.menu-items {
+  display: flex;
+}
+
+.menu-items a {
+  display: inline-block;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu-items {
+    display: none;
+    flex-direction: column;
+    width: 90%; /* Adjust container width */
+    max-width: 300px; /* Limit maximum width */
+    text-align: left;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 0 auto; /* Center the menu */
+    left: 0; /* Center the menu */
+    right: unset; /* Remove right alignment */
+  }
+
+  .menu-items a {
+    padding: 15px 0; /* Increased padding */
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: calc(100% - 20px); /* Add padding to prevent text overflow */
+    margin: 0 auto; /* Center the menu items */
+    font-size: 14px; /* Reduce font size for mobile menu items */
+    display: block; /* Ensure full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  .menu-items a.is-current {
+    font-weight: bold;
+  }
+
+
+  /* Keyboard focus styles */
+  .menu-toggle:focus,
+  .menu-items a:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+  }
+}
 body {
   font-family: 'Inter', sans-serif;
   margin:0;
@@ -386,6 +460,212 @@ html {
   margin-bottom: 1.2rem;
 }
 
+/* ==================================================
+   PROGRAM TABLE (Warm Neutral / Monochrome Palette)
+   ================================================== */
+
+/* --- Desktop Layout --- */
+.program-desktop {
+  width: 100%;
+  margin: 2rem 0 3rem;
+  overflow-x: auto;
+}
+
+.program-desktop table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.88rem;
+  line-height: 1.4;
+  background: #ffffff;
+  border: 1px solid #ebe7e2;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03);
+  table-layout: fixed;
+}
+
+/* Capçalera de la taula */
+.program-desktop table thead th {
+  padding: 14px 12px;
+  background: #f4f1ec;
+  color: #222222;
+  text-align: center;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ebe7e2;
+}
+
+/* Columna de l'hora (Time) */
+.program-desktop table th:first-child,
+.program-desktop table td:first-child {
+  width: 80px;
+  text-align: center;
+  font-weight: 600;
+  color: #666666;
+  background: #faf9f7;
+}
+
+/* Cel·les generals */
+.program-desktop table td {
+  padding: 12px;
+  vertical-align: middle;
+  text-align: center;
+  color: #333333;
+  border-bottom: 1px solid #f0eeeb;
+  border-right: 1px solid #f0eeeb;
+  word-wrap: break-word;
+}
+
+/* Eliminar línies interiors sobrants */
+.program-desktop table tr td:last-child {
+  border-right: none;
+}
+
+.program-desktop table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Efecte en passar el ratolí */
+.program-desktop table tbody tr:hover td {
+  background-color: #faf7f2;
+}
+
+.program-desktop table tbody tr:hover td:first-child {
+  background-color: #f0ece6;
+}
+
+.program-desktop table td p {
+  margin: 0;
+}
+
+
+/* --- Mobile Cards Layout --- */
+.program-table-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin: 2rem 0 3rem;
+}
+
+.program-table-cards .table-card {
+  border: 1px solid #ebe7e2;
+  border-radius: 12px;
+  background: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.program-table-cards .card-time {
+  padding: 10px 16px;
+  background: #f4f1ec;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #222222;
+  border-bottom: 1px solid #ebe7e2;
+}
+
+.program-table-cards .card-day {
+  padding: 10px 16px;
+  border-bottom: 1px solid #f0eeeb;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 0.9rem;
+}
+
+.program-table-cards .card-day:last-child {
+  border-bottom: none;
+}
+
+.program-table-cards .day-label {
+  font-weight: 600;
+  color: #777777;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  min-width: 85px;
+  flex-shrink: 0;
+}
+
+.program-table-cards .day-content {
+  color: #333333;
+}
+
+.program-table-cards .day-content p {
+  margin: 0;
+  display: inline;
+}
+
+
+/* --- RESPONSIVE SWITCH --- */
+
+@media (max-width: 768px) {
+  .program-desktop {
+    display: none !important;
+  }
+  .program-table-cards {
+    display: grid !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .program-desktop {
+    display: block !important;
+  }
+  .program-table-cards {
+    display: none !important;
+  }
+}
+
+.table-card {
+  padding: 16px 20px;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  font-family: 'Inter', sans-serif;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.table-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.table-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.table-card p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.table-card strong {
+  font-weight: 600;
+  color: #222;
+}
+
+/* DESKTOP <-> MOBILE — switch from table to cards and viceversa*/
+@media (max-width: 650px) {
+  .program-table-desktop {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  .program-table-cards {
+    display: none;
+  }
+}
+
 .email-link {
   display: inline-flex;
   align-items: center;
@@ -446,4 +726,106 @@ main a {
 main a:hover {
   opacity: 0.6;                    /* Es torna gris translúcid, igual que els jump-links */
   outline: none;
+}
+
+/* === KEYNOTES PAGE (Warm Neutral / Monochrome Palette) === */
+
+.keynotes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin: 2rem 0 3.5rem;
+}
+
+/* Speaker Card with bottom divider line matching site borders */
+.keynote-card {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 2rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #ebe7e2;
+}
+
+.keynote-card:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.keynote-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.keynote-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 1px solid #ebe7e2;
+  background: #faf9f7;
+}
+
+.keynote-name {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #222222;
+  margin: 0 0 0.25rem 0;
+}
+
+.keynote-position {
+  font-size: 0.85rem;
+  color: #666666;
+  line-height: 1.35;
+  margin-bottom: 0.75rem;
+}
+
+.keynote-link {
+  font-size: 0.85rem;
+  color: #222222;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.keynote-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.keynote-section-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #777777;
+  margin-bottom: 0.35rem;
+  display: block;
+}
+
+.talk-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #222222;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.35;
+}
+
+.keynote-bio,
+.talk-description {
+  font-size: 0.92rem;
+  color: #333333;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .keynote-card {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+  }
 }
