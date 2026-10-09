@@ -529,17 +529,34 @@ html {
   border-bottom: none;
 }
 
-/* Efecte en passar el ratolí */
+/*// Efecte en passar el ratolí 
 .program-desktop table tbody tr:hover td {
   background-color: #faf7f2;
 }
 
 .program-desktop table tbody tr:hover td:first-child {
   background-color: #f0ece6;
-}
+}*/
 
 .program-desktop table td p {
   margin: 0;
+}
+
+/* Reduce vertical padding so multi-line text doesn't expand row height */
+.program-desktop table td {
+  padding: 4px 6px;
+  line-height: 1.25;
+  vertical-align: middle;
+  text-align: center;
+  color: #333333;
+  border-bottom: 1px solid #f0eeeb;
+  border-right: 1px solid #f0eeeb;
+  word-wrap: break-word;
+}
+
+/* Force every half-hour row to have an identical height */
+.program-desktop table tbody tr {
+  height: 35px; /* Adjust (e.g., 35px to 50px) to change total hour height */
 }
 
 
@@ -604,10 +621,23 @@ html {
 
 @media (max-width: 768px) {
   .program-desktop {
-    display: none !important;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 8px;
+    border: 1px solid #ebe7e2;
   }
-  .program-table-cards {
-    display: grid !important;
+
+  .program-desktop table {
+    min-width: 700px; /* Ensures grid columns don't compress completely */
+  }
+
+  /* Make time column sticky on horizontal scroll */
+  .program-desktop table th:first-child,
+  .program-desktop table td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
   }
 }
 
@@ -828,4 +858,112 @@ main a:hover {
     gap: 1.5rem;
     padding-bottom: 2rem;
   }
+}
+
+/* === PROGRAM LOCATION COLOR SYSTEM & LEGEND === */
+
+.program-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+}
+
+.legend-item {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 10px; /* <--- Adds clean spacing after the badge */
+}
+
+/* Location cell styling */
+/* Room 1: Halo Gold / Golden Ochre */
+.program-desktop table td.loc-room1, .legend-item.loc-room1 {
+  background-color: #fcf6e8 !important; /* Soft Ochre Light */
+  border-left: 3px solid #c2831b !important; /* Gold Halo Accent */
+  color: #5c3e0d;
+  font-weight: 500;
+}
+
+/* Room 2: Fresco Verdigris Green (Background Plaster) */
+.program-desktop table td.loc-room2, .legend-item.loc-room2 {
+  background-color: #edf4f0 !important; /* Soft Mineral Green Tint */
+  border-left: 3px solid #2d5a47 !important; /* Deep Romanesque Verdigris */
+  color: #163629;
+  font-weight: 500;
+}
+
+/* Social: Terracotta / Rust Red */
+.program-desktop table td.loc-social, .legend-item.loc-social {
+  background-color: #fdf2f0 !important; /* Soft Terracotta Light */
+  border-left: 3px solid #b84033 !important; /* Halo Rust / Flame Red */
+  color: #611e17;
+  font-weight: 500;
+}
+
+/* Event: Burnt Sienna / Warm Clay */
+.program-desktop table td.loc-event, .legend-item.loc-event {
+  background-color: #f9f2eb !important; /* Soft Sienna Light */
+  border-left: 3px solid #9e5b3f !important; /* Burnt Sienna Base */
+  color: #4a2717;
+  font-weight: 500;
+}
+
+/* CIC: Aged Plaster Stone Neutral */
+.program-desktop table td.loc-cic, .legend-item.loc-cic {
+  background-color: #f4f1ec !important; /* Parchment Background */
+  border-left: 3px solid #8c8378 !important; /* Weathered Stone Accent */
+  color: #2b2824;
+  font-weight: 500;
+}
+
+.program-desktop table td.empty {
+  color: #a3a3a3;
+  background-color: #fafafa;
+}
+
+/* Scroll offset for fixed header */
+html {
+  scroll-behavior: smooth;
+}
+
+h3[id^="session-"] {
+  scroll-margin-top: 100px;
+}
+
+/* Style table session links to match cell colors */
+.program-desktop table td a.session-link {
+  color: inherit !important;
+  text-decoration: none !important;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.15s ease;
+}
+
+.program-desktop table td a.session-link:hover {
+  opacity: 0.7;
+  text-decoration: underline !important;
+}
+
+/* Custom box for program notices */
+.program-notice-box {
+  background-color: #faf9f7;
+  border: 1px solid #ebe7e2;
+  border-left: 3px solid #8c8378; /* Matches the CIC legend accent color */
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin: 12px 0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #444;
+}
+
+.program-notice-box p {
+  margin: 0;
 }
