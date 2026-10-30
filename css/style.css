@@ -203,7 +203,7 @@ nav a:hover {
   text-shadow: 0 3px 8px rgba(0,0,0,0.12); /* stronger emphasis without underline */
   outline: none;
 }
-main {padding-top:80px; width:90%; margin:auto; max-width:900px;}
+main {padding-top:calc(var(--header-h, 61px) + 19px); width:90%; margin:auto; max-width:900px;}
 footer {text-align:center; padding:40px 0; border-top:1px solid #eee; margin-top:40px;}
 footer img {height:40px; margin:0 10px; opacity:0.7;}
 strong, b {  font-weight: 500;}
@@ -325,6 +325,27 @@ html {
   border-radius: 50%;
 }
 
+/* International Program Committee: plain name list, two columns on wide screens */
+.ipc-list ul {
+  columns: 2;
+  column-gap: 2rem;
+  padding-left: 0;
+  margin: 1.5rem 0 3rem;
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.ipc-list li {
+  break-inside: avoid;
+  margin-bottom: 0.4rem;
+}
+
+@media (max-width: 650px) {
+  .ipc-list ul {
+    columns: 1;
+  }
+}
+
 .committee-member .member-name {
   margin-top: 8px;
   text-align: center;
@@ -430,14 +451,6 @@ html {
 
 
 /* === MAP === */
-.map-wrapper {
-  text-align: center;
-}
-
-.map-wrapper iframe {
-  max-width: 100%;
-}
-
 /* === IMAGE ROW === */
 .image-row {
   display: flex;
@@ -450,6 +463,54 @@ html {
   width: 48%;
   border-radius: 6px;
   object-fit: cover;
+}
+
+/* Pair of images with different proportions: show both at the same size */
+.image-row.equal img {
+  aspect-ratio: 7 / 5;
+  height: auto;
+}
+
+/* === JUMP LINKS (in-page navigation bar, e.g. Call for Papers, Venue) === */
+.jump-links {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.jump-links a {
+  color: inherit !important;
+  text-decoration: underline !important;
+  font-weight: 300;
+  margin: 0 10px;
+}
+
+.jump-links a:hover {
+  opacity: 0.6;
+}
+
+/* === VENUE MAPS (Google Maps + campus map side by side) === */
+.venue-maps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.venue-maps iframe,
+.venue-maps img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2576 / 1853; /* same proportions as the campus map image */
+  height: auto;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+@media (max-width: 650px) {
+  .venue-maps {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* === COMMITTEE EMAIL === */
@@ -930,10 +991,8 @@ main a:hover {
 /* Scroll offset for fixed header */
 html {
   scroll-behavior: smooth;
-}
-
-h3[id^="session-"] {
-  scroll-margin-top: 100px;
+  /* --header-h is kept in sync with the real header height by menu.js */
+  scroll-padding-top: calc(var(--header-h, 61px) + 24px);
 }
 
 /* Style table session links to match cell colors */
